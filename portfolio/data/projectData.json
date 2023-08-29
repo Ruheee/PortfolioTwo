@@ -5,7 +5,7 @@
     "title": "Card Heroes",
     "description": "Card Heroes is the ultimate destination for trading card enthusiasts. With over a million cards to choose from, we have the perfect card for every collector.",
     "link": "CardHeros",
-    "video":"card-heroes.gif",
+    "video":"contact_seller.gif",
     "tech_stack": [
       {
         "title": "EJS",
