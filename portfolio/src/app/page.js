@@ -1,6 +1,7 @@
 "use client";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiFillInstagram, AiFillLinkedin, AiFillGithub } from "react-icons/ai";
+import Link from "next/link";
 
 import Image from "next/image";
 import Rui from "public/images/FullSizeRender.jpeg";
@@ -16,7 +17,6 @@ import { useState } from "react";
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
 
-  
   return (
     <div className={darkMode ? "dark" : ""}>
       <main className="bg-white pb-10 px-10 duration-500 md:px-20 lg:px-40 dark:duration-500 dark:bg-gray-900 dark:text-white ">
@@ -27,18 +27,18 @@ export default function Home() {
               <li>
                 <BsFillMoonStarsFill
                   className="cursor-pointer text-xl"
-                  onClick={() =>
-                    setDarkMode(!darkMode)
-                  }
+                  onClick={() => setDarkMode(!darkMode)}
                 />
               </li>
               <li>
-                <a
-                  href="https://resume.creddle.io/resume/cedlpke5bzn" target="_blank"
+                <Link
+                  href="images/Resume.pdf"
+                  target="_blank"
+                  rel="noreferrer"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
-                </a>
+                </Link>
               </li>
             </ul>
           </nav>
@@ -94,7 +94,9 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">Photoshop</p>
               <p className="text-gray-800 py-1 dark:text-white">Illustrator</p>
               <p className="text-gray-800 py-1 dark:text-white">Figma</p>
-              <p className="text-gray-800 py-1 dark:text-white">After Effects</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                After Effects
+              </p>
               <p className="text-gray-800 py-1 dark:text-white">Premier Pro</p>
             </div>
             <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-sky-950">
@@ -121,9 +123,13 @@ export default function Home() {
               <p className="text-gray-800 py-1 dark:text-white">React</p>
               <p className="text-gray-800 py-1 dark:text-white">Next.js</p>
               <p className="text-gray-800 py-1 dark:text-white">Node.js</p>
-              <p className="text-gray-800 py-1 dark:text-white">Express & EJS</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                Express & EJS
+              </p>
               <p className="text-gray-800 py-1 dark:text-white">Ajax & Axios</p>
-              <p className="text-gray-800 py-1 dark:text-white">Bootstrap, SASS, & Tailwind</p>
+              <p className="text-gray-800 py-1 dark:text-white">
+                Bootstrap, SASS, & Tailwind
+              </p>
             </div>
           </div>
         </section>
@@ -170,7 +176,7 @@ export default function Home() {
             </p>
             <a
               href="https://github.com/Ruheee/scheduler"
-              target="_blank" 
+              target="_blank"
               className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md"
             >
               Git
