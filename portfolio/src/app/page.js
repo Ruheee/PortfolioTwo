@@ -11,7 +11,6 @@ import web1 from "public/images/contact_seller.gif";
 import web2 from "public/images/Scheduler.gif";
 import web3 from "public/images/Talento.gif";
 
-
 import { useState } from "react";
 
 export default function Home() {
@@ -31,14 +30,12 @@ export default function Home() {
                 />
               </li>
               <li>
-                <Link
+                <a
                   href="images/Resume.pdf"
-                  target="_blank"
-                  rel="noreferrer"
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
-                </Link>
+                </a>
               </li>
             </ul>
           </nav>
