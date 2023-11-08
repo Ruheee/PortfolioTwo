@@ -34,7 +34,7 @@ export default function Home() {
               </li>
               <li>
                 <a
-                  href="public/Resume.pdf" download="Ruis Resume"
+                  href="RuisResume.pdf" target={"_blank"}
                   className="bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8"
                 >
                   Resume
